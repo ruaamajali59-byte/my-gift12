@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fa">
+  <meta name="description" content="تحليل موجز للبيانات العامة والريل المنشور من صفحة My Gift على فيسبوك، مع توضيح ما أمكن التحقق منه وحدود الفحص.">
+  <title>تحليل رابط My Gift على فيسبوك</title>
+  <style>
+    :root{font-family:Tahoma,Arial,sans-serif;color:#1a252f;background:#f5f7fa;font-synthesis:none;text-rendering:optimizeLegibility;--navy:#263849;--ink:#1a252f;--muted:#71808a;--paper:#f5f7fa;--white:#fff;--line:#d8dfe4;--amber:#c66a22;--amber-soft:#fff4e8}
+    *{box-sizing:border-box}html{min-width:320px;scroll-behavior:smooth;background:var(--paper)}body{margin:0;min-width:320px;min-height:100vh}.site-shell{min-height:100vh;overflow-x:clip;background:var(--paper)}a{color:inherit}.page-width{width:min(1120px,calc(100% - 64px));margin-inline:auto}
+    .topbar{height:74px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding-inline:max(32px,calc((100vw - 1120px)/2));background:#f5f7fa;color:var(--navy);font-size:14px}.wordmark{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700}.wordmark-mark{width:34px;height:34px;display:grid;place-items:center;background:var(--navy);color:white;font-size:19px}.topbar-meta{display:flex;align-items:center;gap:9px;color:var(--muted)}.status-dot{width:8px;height:8px;border-radius:50%;background:#55916a}
+    .hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.65fr);gap:72px;padding-block:82px 76px;align-items:center}.hero-copy{padding-right:26px;border-right:4px solid var(--navy)}.eyebrow,.section-index{color:var(--muted);font-size:13px;font-weight:700;letter-spacing:.04em}.eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:18px}.eyebrow-line{width:34px;height:1px;background:var(--amber)}h1,h2,h3{font-family:Tahoma,Arial,sans-serif}h1{margin:0 0 18px;color:var(--navy);font-size:clamp(40px,5.5vw,66px);line-height:1.25;font-weight:700;letter-spacing:-.035em}h1 span{color:var(--amber)}.hero-summary{max-width:650px;color:#53616b;font-size:20px;line-height:1.85;margin:0 0 28px}.hero-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.source-button{display:inline-flex;align-items:center;gap:10px;padding:12px 17px;background:var(--navy);color:#fff;text-decoration:none;font-size:15px;font-weight:700;border:1px solid var(--navy)}.source-button:hover{background:#1d2c3a}.hero-date{color:var(--muted);font-size:14px;display:inline-flex;gap:8px;align-items:center}.hero-brief{background:var(--navy);color:#fff;padding:28px;min-height:250px;display:flex;flex-direction:column;border-top:4px solid var(--amber)}.brief-kicker{letter-spacing:.08em;font-size:12px;color:#c6d1d9}.brief-mark{margin-block:20px 10px;color:#efb26f;font-size:25px}.hero-brief p{font-size:20px;line-height:1.65;margin:0 0 22px}.brief-foot{border-top:1px solid #ffffff38;margin-top:auto;padding-top:14px;color:#d4dde3;font-size:14px}
+    .metrics-section,.evidence-section{padding-block:56px 48px;border-top:1px solid var(--line)}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.section-heading h2{color:var(--navy);margin:7px 0 0;font-size:29px;line-height:1.45}.section-heading>p{max-width:320px;color:var(--muted);font-size:15px;line-height:1.7;margin-bottom:3px}.metrics-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-right:1px solid var(--line)}.metric{min-height:164px;background:#fff;border-left:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 22px 17px}.metric-warning{background:#fffdfa}.metric-topline{display:flex;align-items:center;gap:9px;color:var(--muted)}.metric-icon{display:grid;place-items:center;width:28px;height:28px;background:#edf1f4;color:var(--navy);font-size:17px}.metric-warning .metric-icon{background:var(--amber-soft);color:var(--amber)}.metric-label{font-size:14px;font-weight:700}.metric-value{color:var(--navy);font-size:42px;line-height:1.25;margin-top:9px;font-weight:700}.metric-warning .metric-value{color:var(--amber)}.metric-note{color:var(--muted);font-size:14px;margin:4px 0 0}.classification-line{display:grid;grid-template-columns:1fr 1.2fr 2fr;gap:18px;align-items:center;padding:18px 20px;background:#eaf0f4;border-right:3px solid var(--navy)}.classification-label,.classification-note{color:var(--muted);font-size:14px}.classification-value{color:var(--navy);font-weight:700;font-size:18px}.classification-value small{color:var(--muted);font-size:13px;font-weight:500;margin-right:6px}.classification-note{line-height:1.6}
+    .evidence-section{padding-block:56px 60px}.evidence-columns{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}.evidence-column{background:#fff;padding:27px 30px 30px}.evidence-column.unknown{background:#fffaf5}.column-label{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--muted);font-weight:700}.label-mark{width:9px;height:9px;background:#4f8160}.unknown .label-mark{background:var(--amber)}.evidence-column h3{margin:17px 0 18px;color:var(--navy);font-size:21px}.evidence-column ul{list-style:none;padding:0;margin:0}.evidence-column li{position:relative;padding-right:18px;margin-top:13px;color:#53616b;font-size:16px;line-height:1.75}.evidence-column li:before{content:"";position:absolute;right:0;top:11px;width:5px;height:5px;background:#7f8c8d}.unknown li:before{background:var(--amber)}
+    .limitation{display:grid;grid-template-columns:48px minmax(0,1fr) 100px;align-items:center;gap:22px;padding:26px 30px;background:var(--amber-soft);border-block:1px solid #f0d5ba}.limitation-icon{width:44px;height:44px;display:grid;place-items:center;color:var(--amber);border:1px solid #e6bb91;font-size:22px}.limitation-copy h2{font-size:22px;color:#56361e;margin:7px 0 8px}.limitation-copy p{margin:0;color:#745a43;line-height:1.75;font-size:16px;max-width:800px}.limitation-duration{border-right:1px solid #e6bb91;text-align:center;color:#8c531e}.limitation-duration strong{display:block;font-size:39px;line-height:1}.limitation-duration span{font-size:13px}
+    .conclusion{display:grid;grid-template-columns:90px 1fr;gap:26px;align-items:start;padding-block:64px;border-bottom:1px solid var(--line)}.conclusion-number{color:#cad2d8;font-size:64px;line-height:1;font-weight:700;border-left:1px solid var(--line)}.conclusion-body h2{color:var(--navy);font-size:clamp(23px,3vw,34px);line-height:1.5;margin:8px 0 12px}.conclusion-body p{color:#5a6872;font-size:17px;line-height:1.8;max-width:790px;margin:0}.sources{padding-block:48px 38px}.source-heading{margin-bottom:18px}.source-heading h2{font-size:24px}.source-links{border-top:1px solid var(--line)}.source-links a{display:grid;grid-template-columns:58px 1fr 20px;align-items:center;gap:15px;padding:16px 6px;text-decoration:none;border-bottom:1px solid var(--line);color:var(--navy)}.source-links a:hover strong{text-decoration:underline;text-underline-offset:4px}.source-links a span{color:var(--amber);font-size:14px}.source-links a strong{font-weight:700;font-size:16px}.source-links a .ext{color:var(--muted)}.source-note{color:var(--muted);font-size:13px;margin:15px 0 0}.footer{border-top:1px solid var(--line);padding-block:20px 26px;display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:13px}
+    @media(max-width:760px){.page-width{width:min(100% - 36px,540px)}.topbar{height:62px;padding-inline:18px}.hero{grid-template-columns:1fr;gap:30px;padding-block:52px 46px}.hero-copy{padding-right:17px}h1{font-size:clamp(38px,11vw,56px)}.hero-summary{font-size:18px}.hero-brief{min-height:0;padding:22px}.hero-brief p{font-size:18px;margin-block:14px 18px}.metrics-section,.evidence-section{padding-block:42px}.section-heading{align-items:start;flex-direction:column;gap:8px;margin-bottom:20px}.section-heading h2{font-size:24px}.section-heading>p{margin:0}.metrics-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.metric{min-height:148px;padding:16px}.metric-value{font-size:37px}.classification-line{grid-template-columns:1fr;gap:7px;padding:16px}.evidence-columns{grid-template-columns:1fr}.evidence-column{padding:22px 20px}.limitation{grid-template-columns:38px minmax(0,1fr);padding:20px 17px;gap:14px}.limitation-icon{width:36px;height:36px}.limitation-copy h2{font-size:19px}.limitation-copy p{font-size:15px}.limitation-duration{grid-column:2;display:flex;align-items:baseline;justify-content:flex-start;gap:7px;border-right:0;border-top:1px solid #e6bb91;padding-top:10px;text-align:right}.limitation-duration strong{font-size:27px}.conclusion{grid-template-columns:52px 1fr;gap:16px;padding-block:44px}.conclusion-number{font-size:44px}.conclusion-body p{font-size:16px}.footer{flex-direction:column;gap:7px}}
+    @media(max-width:380px){.metrics-grid{grid-template-columns:1fr 1fr}.metric{padding:13px 12px}.metric-label,.metric-note{font-size:12px}.metric-value{font-size:34px}.hero-actions{align-items:flex-start;flex-direction:column;gap:15px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="العودة إلى بداية التقرير"><span class="wordmark-mark" aria-hidden="true">▤</span><span>مرصد الروابط</span></a>
+      <div class="topbar-meta"><span class="status-dot" aria-hidden="true"></span> تقرير مفتوح المصدر</div>
+    </header>
+    <main id="top">
+      <section class="hero page-width" aria-labelledby="report-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span>تحليل صفحة اجتماعية</span><span class="eyebrow-line"></span></div>
+          <h1 id="report-title">رابط <span>My Gift</span><br>على فيسبوك</h1>
+          <p class="hero-summary">الصفحة تعرّف نفسها كخدمة أو منتج، لكن محتوى الريل لم يكن متاحًا للتحقق الكامل. هذا التقرير يفصل ما ظهر علنًا عمّا لا يمكن استنتاجه.</p>
+          <div class="hero-actions">
+            <a class="source-button" href="https://www.facebook.com/reel/1117020674444581/" target="_blank" rel="noopener noreferrer">فتح الريل الأصلي <span aria-hidden="true">↗</span></a>
+            <span class="hero-date">▦　فُحص في 2 نوفمبر 2026</span>
+          </div>
+        </div>
+        <aside class="hero-brief" aria-label="النتيجة الأولية">
+          <span class="brief-kicker">النتيجة الأولية</span><div class="brief-mark" aria-hidden="true">⚠</div>
+          <p>المعلومات العامة تصف الصفحة، لكنها لا تكشف مضمون العرض داخل الفيديو.</p>
+          <div class="brief-foot">لا يكفي عدد المتابعين للحكم على الموثوقية</div>
+        </aside>
+      </section>
+
+      <section class="metrics-section page-width" aria-labelledby="metrics-title">
+        <div class="section-heading"><div><span class="section-index">01 / بيانات ظاهرة</span><h2 id="metrics-title">لقطة من الصفحة والريل</h2></div><p>الأرقام كما ظهرت على واجهة فيسبوك وقت الفحص.</p></div>
+        <div class="metrics-grid">
+          <div class="metric"><div class="metric-topline"><span class="metric-icon">◷</span><span class="metric-label">ثوانٍ</span></div><div class="metric-value">8</div><p class="metric-note">مدة الريل</p></div>
+          <div class="metric"><div class="metric-topline"><span class="metric-icon">♧</span><span class="metric-label">متابعون</span></div><div class="metric-value">9</div><p class="metric-note">عدد المتابعين الظاهر</p></div>
+          <div class="metric"><div class="metric-topline"><span class="metric-icon">↖</span><span class="metric-label">يتابعهم الحساب</span></div><div class="metric-value">53</div><p class="metric-note">عدد الحسابات التي يتابعها</p></div>
+          <div class="metric metric-warning"><div class="metric-topline"><span class="metric-icon">☆</span><span class="metric-label">تقييمات</span></div><div class="metric-value">0</div><p class="metric-note">لا توجد تقييمات مسجلة</p></div>
+          <div class="metric"><div class="metric-topline"><span class="metric-icon">♡</span><span class="metric-label">تفاعل</span></div><div class="metric-value">1</div><p class="metric-note">تفاعل واحد ظاهر على الريل</p></div>
+          <div class="metric metric-warning"><div class="metric-topline"><span class="metric-icon">↗</span><span class="metric-label">مشاركات</span></div><div class="metric-value">0</div><p class="metric-note">لا توجد مشاركات ظاهرة</p></div>
+        </div>
+        <div class="classification-line"><span class="classification-label">تصنيف الصفحة المعلن</span><span class="classification-value">منتج / خدمة <small>Product / service</small></span><span class="classification-note">هذا تصنيف تختاره الصفحة، وليس إثباتًا مستقلًا لطبيعة النشاط.</span></div>
+      </section>
+
+      <section class="evidence-section page-width" aria-labelledby="evidence-title">
+        <div class="section-heading"><div><span class="section-index">02 / قراءة الأدلة</span><h2 id="evidence-title">ما الذي نعرفه، وما الذي لا نعرفه؟</h2></div></div>
+        <div class="evidence-columns">
+          <article class="evidence-column confirmed"><div class="column-label"><span class="label-mark"></span> بيانات ظاهرة</div><h3>حقائق يمكن إسنادها إلى الصفحة</h3><ul>
+            <li>اسم الصفحة الظاهر هو My Gift، وتصنيفها المعلن منتج/خدمة.</li>
+            <li>الريل قصير، مدته 8 ثوانٍ، ونُشر قبل نحو يوم من وقت الفحص.</li>
+            <li>تظهر الصفحة 9 متابعين، و53 حسابًا تتابعه، ولا تظهر لها تقييمات.</li>
+            <li>يظهر للريل تفاعل واحد وصفر مشاركات في واجهة الصفحة.</li>
+          </ul></article>
+          <article class="evidence-column unknown"><div class="column-label"><span class="label-mark"></span> غير متاح للتحقق</div><h3>معلومات لا تثبتها البيانات الحالية</h3><ul>
+            <li>ما المنتج أو العرض الذي يعرضه الفيديو، وما النص أو الادعاءات الواردة فيه.</li>
+            <li>هوية المشغّل أو موقعه أو بياناته التجارية.</li>
+            <li>جودة الخدمة أو أمان الدفع أو تجربة العملاء.</li>
+            <li>موثوقية الصفحة أو وجود احتيال؛ فالأرقام المحدودة لا تثبت أيًّا منهما.</li>
+          </ul></article>
+        </div>
+      </section>
+
+      <section class="limitation page-width" aria-labelledby="limitation-title">
+        <div class="limitation-icon" aria-hidden="true">⚠</div>
+        <div class="limitation-copy"><span class="section-index">03 / قيد مهم</span><h2 id="limitation-title">لم تتوفر مشاهدة كاملة لمحتوى الفيديو</h2><p>ظهرت نافذة تسجيل الدخول في عرض فيسبوك المتاح، ولم يظهر وصف مكتوب أو تفريغ نصي. لذلك لا يمكن وصف المشاهد أو الصوت أو تقييم أي عرض داخل الريل على نحو موثوق.</p></div>
+        <div class="limitation-duration"><strong>8</strong><span>ثوانٍ</span></div>
+      </section>
+
+      <section class="conclusion page-width" aria-labelledby="conclusion-title">
+        <div class="conclusion-number">04</div><div class="conclusion-body"><span class="section-index">الخلاصة</span><h2 id="conclusion-title">المتاح يكفي لوصف الصفحة، لا للحكم على العرض.</h2><p>يلزم ملف الفيديو أو نصه لتحليل مضمونه. لا تُعد قلة المتابعين أو غياب التقييمات دليلًا وحده على الموثوقية أو الاحتيال.</p></div>
+      </section>
+
+      <section class="sources page-width" aria-labelledby="sources-title">
+        <div class="section-heading source-heading"><div><span class="section-index">مصادر مباشرة</span><h2 id="sources-title">روابط التحقق</h2></div></div>
+        <div class="source-links">
+          <a href="https://www.facebook.com/profile.php?id=61596194571184" target="_blank" rel="noopener noreferrer"><span>01</span><strong>صفحة My Gift على فيسبوك</strong><span class="ext" aria-hidden="true">↗</span></a>
+          <a href="https://www.facebook.com/reel/1117020674444581/" target="_blank" rel="noopener noreferrer"><span>02</span><strong>الريل محل التحليل</strong><span class="ext" aria-hidden="true">↗</span></a>
+        </div>
+        <p class="source-note">الأعداد والمعلومات الوصفية تمثل ما ظهر وقت الفحص وقد تتغير لاحقًا.</p>
+      </section>
+    </main>
+    <footer class="footer page-width"><span>تحليل معلومات عامة متاحة للجمهور</span><span>آخر فحص: 2 نوفمبر 2026</span></footer>
+  </div>
+</body>
+</html>
